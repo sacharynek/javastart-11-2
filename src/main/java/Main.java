@@ -9,7 +9,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Line2D line1 = new Line2D(0, 10);
+        Line2D line1 = new Line2D(0,10,0,0);
         Ball ball1 = new Ball(1);
         Cube cube1 = new Cube(2);
         Circle circle1 = new Circle(1);
