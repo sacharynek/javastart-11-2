@@ -10,6 +10,10 @@ public class Circle extends GeometricShape {
         this.diameter = diameter;
     }
 
+    public double getArea(){
+        return Math.PI*this.getDiameter()*getDiameter();
+    }
+
     public double getDiameter() {
         return diameter;
     }
@@ -18,10 +22,10 @@ public class Circle extends GeometricShape {
         this.diameter = diameter;
     }
 
+
+
     @Override
     public String toString() {
-        return "Circle{" +
-                "diameter=" + diameter +
-                '}';
+        return "Koło o średnicy "+this.getDiameter();
     }
 }

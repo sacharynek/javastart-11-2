@@ -11,6 +11,10 @@ public class Rectangle extends GeometricShape {
         this.sideB = sideB;
     }
 
+    public double getArea(){
+        return this.getSideA()*this.getSideB();
+    }
+
     public double getSideA() {
         return sideA;
     }
@@ -29,9 +33,6 @@ public class Rectangle extends GeometricShape {
 
     @Override
     public String toString() {
-        return "Rectangle{" +
-                "sideA=" + sideA +
-                ", sideB=" + sideB +
-                '}';
+        return "Prostokąt o długościach boków "+this.sideA + ", "+this.sideB;
     }
 }

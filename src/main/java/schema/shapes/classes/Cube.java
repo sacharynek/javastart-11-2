@@ -10,6 +10,10 @@ public class Cube extends Shape3D {
         this.side = side;
     }
 
+    public double getVolume(){
+        return this.getSide()*this.getSide()*this.getSide();
+    }
+
     public double getSide() {
         return side;
     }
@@ -20,8 +24,6 @@ public class Cube extends Shape3D {
 
     @Override
     public String toString() {
-        return "Cube{" +
-                "side=" + side +
-                '}';
+        return "Sześcian o długości krawędzi wynoszącej "+this.getSide();
     }
 }

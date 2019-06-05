@@ -10,6 +10,10 @@ public class Ball extends Shape3D {
         this.diameter = diameter;
     }
 
+    public double getVolume(){
+        return 4.0/3.0*Math.PI*this.getDiameter()*this.getDiameter()*this.getDiameter();
+    }
+
     public double getDiameter() {
         return diameter;
     }
@@ -20,8 +24,6 @@ public class Ball extends Shape3D {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                "diameter=" + diameter +
-                '}';
+        return "Kula o średnicy wynoszącej " + this.getDiameter();
     }
 }

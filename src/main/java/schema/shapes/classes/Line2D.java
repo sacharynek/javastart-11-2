@@ -47,11 +47,10 @@ public class Line2D extends Shape2D {
 
     @Override
     public String toString() {
-        return "Line2D{" +
-                "x1=" + x1 +
-                ", x2=" + x2 +
-                ", y1=" + y1 +
-                ", y2=" + y2 +
-                '}';
+        return "Odcinek wyznaczony przez wspolrzedne" +
+                "[" + x1 + "]"+
+                "[" + y1 + "]"+
+                "[" + x2 + "]"+
+                "[" + y2 + "]";
     }
 }
