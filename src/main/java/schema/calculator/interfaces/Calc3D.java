@@ -1,11 +1,9 @@
 package schema.calculator.interfaces;
 
-import schema.shapes.classes.Ball;
-import schema.shapes.classes.Cube;
+import schema.shapes.abstractclasses.Shape3D;
 
 public interface Calc3D {
 
-    double ballVolume(Ball ball);
+    double volume(Shape3D shape);
 
-    double cubeVolume(Cube cube);
 }
