@@ -11,21 +11,22 @@ public class ShapeCalculator extends LineCalc implements Calc2D, Calc3D {
 
     @Override
     public double circleArea(Circle circle) {
-        return 0;
+        return Math.PI * circle.getDiameter() * circle.getDiameter();
     }
 
     @Override
     public double rectangleArea(Rectangle rectangle) {
-        return 0;
+        return rectangle.getSideA() * rectangle.getSideB();
     }
 
     @Override
     public double ballVolume(Ball ball) {
-        return 0;
+
+        return 4.0 / 3.0 * Math.PI * ball.getDiameter() * ball.getDiameter() * ball.getDiameter();
     }
 
     @Override
     public double cubeVolume(Cube cube) {
-        return 0;
+        return cube.getSide() * cube.getSide() * cube.getSide();
     }
 }

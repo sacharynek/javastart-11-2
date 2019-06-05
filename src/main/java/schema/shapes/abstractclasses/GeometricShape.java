@@ -1,5 +1,6 @@
 package schema.shapes.abstractclasses;
 
-public class GeometricShape extends Shape2D {
+public abstract class GeometricShape extends Shape2D {
+
 
 }

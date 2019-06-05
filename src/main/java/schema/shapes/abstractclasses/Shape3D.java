@@ -1,5 +1,5 @@
 package schema.shapes.abstractclasses;
 
-public class Shape3D extends Shape {
+public abstract class Shape3D extends Shape {
 
 }

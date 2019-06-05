@@ -1,5 +1,5 @@
 package schema.shapes.abstractclasses;
 
-public class Shape {
+public abstract class Shape {
 
 }
